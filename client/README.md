@@ -8,29 +8,20 @@ Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Running the tests
-1. Add transactions by using addTransaction method (POST)
-ex)
-* http://localhost:8080/customerTransaction?custid=10001&moneyspent=200&transdate=20200101
-* http://localhost:8080/customerTransaction?custid=10001&moneyspent=60&transdate=20200102
-* http://localhost:8080/customerTransaction?custid=10001&moneyspent=40&transdate=20200119
-* http://localhost:8080/customerTransaction?custid=10001&moneyspent=70&transdate=20200203
-* http://localhost:8080/customerTransaction?custid=10001&moneyspent=200&transdate=20200303
 
-2. Get the points of a customer on each months (GET)
-ex)
-* http://localhost:8080/monthpoint/10001/202001
-* http://localhost:8080/monthpoint/10001/202002
-* http://localhost:8080/monthpoint/10001/202003
+### Get Reward Points Report
+1. Put the user id on the user id textbox, and click search.
+![screen1](https://user-images.githubusercontent.com/34907404/73322543-98ddcb80-420a-11ea-9a6c-c60ca6a0f425.JPG)
 
-3. Get the total points of the customer (GET)
-* http://localhost:8080/totalpoint/10001
+2. You can see the reward points of the 3 months and the total points.
+![screen2](https://user-images.githubusercontent.com/34907404/73322548-9aa78f00-420a-11ea-9bee-b5902ec4070b.JPG)
 
-4. Use the points of the customer (POST)
-* http://localhost:8080/usePoints??custid=10001&pointsspent=100&transdate=20200220
+### Adding transactions to a customer
+1. Put in the user id, transaction date, and amount of money spent on each textbox then click submit.
+![addingpoint1](https://user-images.githubusercontent.com/34907404/73322553-9c715280-420a-11ea-8429-c64e1da3986c.JPG)
 
-5. Check the total points of the customer again (GET)
-* http://localhost:8080/totalpoint/10001
-
+2. You can see the points are added if the money spent is over $50.
+![addingpoint2](https://user-images.githubusercontent.com/34907404/73322556-9e3b1600-420a-11ea-9269-de0c3a265ce1.JPG)
 
 ## Authors
 * **Ki Hong "Daniel" Park** - [PersonalBlog](https://www.notion.so/kihong017/Leaving-Traces-5ece193b296e4ea494327207224c6ce2)
