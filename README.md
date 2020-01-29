@@ -4,6 +4,10 @@ A customer receives 2 points for every dollar spent over $100 in each transactio
 
 It also provides report on reward points earned for each customer per month and total.
 
+## Contents
+This project is consists of two project.
+* Client - Front End
+* PointCalculation - Back End
 
 ## Built With
 * Java 1.8
