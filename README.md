@@ -6,8 +6,8 @@ It also provides report on reward points earned for each customer per month and 
 
 ## Contents
 This project is consists of two project.
-* Client - Front End
-* PointCalculation - Back End
+* client - Front End
+* pointcalculation - Back End
 
 ## Built With
 * Java 1.8
