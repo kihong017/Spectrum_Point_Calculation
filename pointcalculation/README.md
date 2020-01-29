@@ -8,8 +8,8 @@
 ## REST Methods
 |  | Description   | Request  | Response |
 | --- | --- | --- | --- |
-| GET | Get the point reports of a customer | /totalpoint/{custid} | [{"id":1,"custId":"example1","reportMonth":"202001","moneySpent":360.00,"points":270} |
-| POST | Add a transaction | /customerTransaction {"custid": "10001", "moneyspent": "120", "transdate": "2020-01-17"} | {"reportMonth": "202001", "moneySpent": 180, "point": 100} |
+| GET | Get the point reports of a customer | /totalpoint/{custid} |  {"id":1,"custId":"example1","reportMonth":"202001","moneySpent":360.00,"points":270} |
+| POST | Add a transaction | /customerTransaction {"custid": "10001", "moneyspent": "120", "transdate": "2020-01-17"} | {"id":1,"custId":"example1","reportMonth":"202001","moneySpent":360.00,"points":270} |
 
 ## Test Data Sets
 | custid | moneyspent | reportMonth |
