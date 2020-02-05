@@ -2,31 +2,30 @@ package net.spectrum.pointcalculation;
 
 import java.math.BigDecimal;
 
-public class TransactionPointCalculator {
+public class PointCalculator {
 
-    public Integer calculateTransactionPoint(BigDecimal moneySpent) {
+    public Integer calculateTransactionPoints(BigDecimal moneySpent) {
         Integer transactionPoint = 0;
         Integer moneySpentConvInt = moneySpent.intValue();
 
         if (moneySpentConvInt > PointConditionEnum.HUNDREDDOLLARS.getValue()) {
-            transactionPoint = calculateOverHundredPoint(moneySpentConvInt);
+            transactionPoint = calculateOverHundredPoints(moneySpentConvInt);
         } else if (moneySpentConvInt > PointConditionEnum.FIFTYDOLLARS.getValue()) {
-            transactionPoint = calculateOverFiftyPoint(moneySpentConvInt);
+            transactionPoint = calculateOverFiftyPoints(moneySpentConvInt);
         }
 
         return transactionPoint;
     }
 
-    private Integer calculateOverFiftyPoint(Integer moneySpent) {
-        if (moneySpent > 100) {
+    private Integer calculateOverFiftyPoints(Integer moneySpent) {
+        if (moneySpent > PointConditionEnum.HUNDREDDOLLARS.getValue()) {
             return PointConditionEnum.FIFTYDOLLARS.getValue() * PointConditionEnum.POINTPEROVERFIFTY.getValue();
         } else {
             return (moneySpent - PointConditionEnum.FIFTYDOLLARS.getValue()) * PointConditionEnum.POINTPEROVERFIFTY.getValue();
         }
     }
 
-
-    private Integer calculateOverHundredPoint(Integer moneySpent) {
-        return calculateOverFiftyPoint(moneySpent) + (moneySpent - PointConditionEnum.HUNDREDDOLLARS.getValue()) * PointConditionEnum.POINTSPEROVERHUNDRED.getValue();
+    private Integer calculateOverHundredPoints(Integer moneySpent) {
+        return calculateOverFiftyPoints(moneySpent) + (moneySpent - PointConditionEnum.HUNDREDDOLLARS.getValue()) * PointConditionEnum.POINTSPEROVERHUNDRED.getValue();
     }
 }

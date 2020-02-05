@@ -86,16 +86,16 @@ class MonthPointsList extends React.Component<{}, any> {
                 <br/>
                 <form onSubmit={this.addPoints} onChange =  { this.handleChange }>
                     <b>User ID : </b>
-                    <input type="text" name="custid"></input>
+                    <input type="text" name="custid" required></input>
                     <button type="button" onClick={this.fetchData}> Search </button>
                     <text>{"\n"}</text>
                     <br/>
                     <br/>
                     <b>Transaction Date : </b>
-                    <input type="date" name="transdate"/>
+                    <input type="date" name="transdate" required/>
                     <text>  </text>
                     <b>Money Spent : </b>
-                    <input type="number" name="moneyspent" min="0" pattern="[0-9]*" inputMode="numeric"/>
+                    <input type="number" name="moneyspent" min="0" step="0.01" inputMode="numeric" required/>
                     <input type="submit" value="Submit" />
                 </form>
             </div>

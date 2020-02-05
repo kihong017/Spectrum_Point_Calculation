@@ -1,16 +1,25 @@
 package net.spectrum.pointcalculation;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDate;
 
-public class TransactionPointsVO {
+@Entity
+public class Transaction {
 
-    String custid;
-    BigDecimal moneyspent;
-    Date transdate;
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String custid;
+    private BigDecimal moneyspent;
+    private LocalDate transdate;
 
-    public TransactionPointsVO(String custid, BigDecimal moneyspent, Date transdate) {
+    public Transaction() {
+    }
+
+    public Transaction(String custid, BigDecimal moneyspent, LocalDate transdate) {
         this.custid = custid;
         this.moneyspent = moneyspent;
         this.transdate = transdate;
@@ -32,11 +41,11 @@ public class TransactionPointsVO {
         this.moneyspent = moneyspent;
     }
 
-    public Date getTransdate() {
+    public LocalDate getTransdate() {
         return transdate;
     }
 
-    public void setTransdate(Date transdate) {
+    public void setTransdate(LocalDate transdate) {
         this.transdate = transdate;
     }
 }
