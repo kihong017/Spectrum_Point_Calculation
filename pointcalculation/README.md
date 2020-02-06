@@ -1,13 +1,15 @@
-## Data Sets Explain
+# Back-End
+
+## Entities
+* Transaction : Entity to be used when a transaction is added to a customer
+* RewardPointsReport : Entity to be used to show a customer's current reward points
+
+## Variables Explanation
 * custid : Customer's ID (Assuming there are already customer ids exist). ex) 10001, 10002
 * moneyspent : Money spent by a customer. ex) 100
 * transdate : Date of Transaction. ex) "20200129"
 * reportMonth : Month of reward points report. ex) "202001", "202008"
 * point : Reward points
-
-## Entities
-* Transaction : Entity to be used when a transaction is added to a customer
-* RewardPointsReport : Entity to be used to show a customer's current reward points
 
 ## Repository
 * TransactionRepository : Repository that saves customer's transactions and reward points
