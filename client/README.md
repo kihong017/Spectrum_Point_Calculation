@@ -1,6 +1,8 @@
-# Spectrum_Point_Calculation
+# Front-End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `npm install`
+
+Once you download the project to local, run this command at the client folder.
 
 ### `npm start`
 
@@ -8,6 +10,8 @@ Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Running the tests
+* Test can be done by running the app using `npm start`
+* The back-end should be up and running before starting the test
 
 ### Get Reward Points Report
 1. Put the user id on the user id textbox, and click search.
