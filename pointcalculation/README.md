@@ -5,6 +5,13 @@
 * reportMonth : Month of reward points report. ex) "202001", "202008"
 * point : Reward points
 
+## Entities
+* Transaction : Entity to be used when a transaction is added to a customer
+* RewardPointsReport : Entity to be used to show a customer's current reward points
+
+## Repository
+* TransactionRepository : Repository that saves customer's transactions and reward points
+
 ## REST Methods
 |  | Description   | Request  | Response |
 | --- | --- | --- | --- |
