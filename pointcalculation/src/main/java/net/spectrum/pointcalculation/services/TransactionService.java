@@ -1,7 +1,9 @@
-package net.spectrum.pointcalculation;
+package net.spectrum.pointcalculation.services;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Configurable;
+import net.spectrum.pointcalculation.PointConditionEnum;
+import net.spectrum.pointcalculation.entities.RewardPointsReport;
+import net.spectrum.pointcalculation.entities.Transaction;
+import net.spectrum.pointcalculation.repositories.TransactionRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;

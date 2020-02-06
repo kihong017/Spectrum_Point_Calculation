@@ -1,14 +1,17 @@
 package net.spectrum.pointcalculation;
 
 
+import net.spectrum.pointcalculation.entities.Transaction;
+import net.spectrum.pointcalculation.entities.RewardPointsReport;
+import net.spectrum.pointcalculation.repositories.TransactionRepository;
+import net.spectrum.pointcalculation.services.PointCalculator;
+import net.spectrum.pointcalculation.services.TransactionService;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
 
 
 import javax.annotation.Resource;
-import javax.validation.constraints.AssertTrue;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

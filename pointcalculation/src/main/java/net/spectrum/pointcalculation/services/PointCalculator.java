@@ -1,4 +1,6 @@
-package net.spectrum.pointcalculation;
+package net.spectrum.pointcalculation.services;
+
+import net.spectrum.pointcalculation.PointConditionEnum;
 
 import java.math.BigDecimal;
 

@@ -1,4 +1,4 @@
-package net.spectrum.pointcalculation;
+package net.spectrum.pointcalculation.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
